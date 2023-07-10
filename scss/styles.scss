@@ -1,4 +1,44 @@
+@use 'mixins' as *;
 @use 'reset';
 @use 'typography';
-@use 'variables';
-@use 'mixins';
+@use 'variables' as *;
+
+/// NAVBAR SECTION ///
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.6rem 2.6rem;
+  
+    .logo{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 170px;
+    }
+  
+    .button{
+      flex: 0;
+      display: flex;
+      align-items: center;
+  
+      .btn{
+        background-color: white;
+        border: 2px solid $btn-border-color;
+        padding: .500rem 1.8rem;
+        border-radius: 50px;
+        font-size: .720rem;
+        font-weight: 600;
+        color: $btn-border-color;
+        box-shadow: 0px 0px 25px -10px rgba(15, 14, 14, 0.25);
+        white-space: nowrap;
+      }
+
+      .btn:hover{
+        color: #fd91d6;
+        border: 2px solid #fd91d6;
+      }
+    }
+}
