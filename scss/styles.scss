@@ -122,3 +122,53 @@
 
 /// SECOND SECTION ///
 
+.second-section{
+  background-image: url(/images/bg-section-top-desktop-1.svg);
+  // background-color: #f6fbff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-x: right;
+  // min-height: 100vh;
+  // min-width: 100vw;
+  margin-bottom: 4rem;
+
+  .second-container{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grow-text grow-img";
+    margin: 0 5rem 0 5rem;
+  
+    .grow-text {
+      justify-self: start;
+      align-self: center;
+      grid-area: grow-text;
+      padding-right: 3rem;
+    }
+
+    h2{
+      color: $main-color;
+      margin-bottom: 1rem;
+    }
+
+    .paragraph-grow{
+      color: $text-color;
+    }
+    
+    .grow-img {
+      justify-self: end;
+      align-self: center;
+      grid-area: grow-img;
+      padding: 2rem;
+    }
+
+    .img-grow{
+      width: 100%;
+    }
+  }
+}
+
